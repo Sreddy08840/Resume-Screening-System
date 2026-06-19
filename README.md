@@ -302,4 +302,21 @@ This project is for demonstration purposes. Please feel free to use and modify a
 
 
 ## Contributors
-- Trae AI (Initial Version 1.0)
+Thanks to everyone who has contributed to this project!
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Sreddy08840">
+        <img src="https://github.com/Sreddy08840.png" width="100px;" alt="Sreddy08840"/><br />
+        <sub><b>Sreddy08840</b></sub>
+      </a><br />
+      <sub>🏗️ Architect · 🤖 AI Pipeline · 💻 Full Stack · 🚀 DevOps</sub>
+    </td>
+    <!-- Add new contributors below -->
+  </tr>
+</table>
+
+> Want your name here? Check the [Contributing Guide](#-contributing) and submit a PR!
+
+---
