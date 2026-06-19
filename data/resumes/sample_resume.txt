@@ -1,0 +1,19 @@
+John Doe
+john.doe@example.com
+(555) 123-4567
+
+Skills:
+- Python
+- Django
+- SQL
+- PostgreSQL
+- Git
+- Docker
+- Flask
+- AWS
+
+Experience:
+8 years of experience
+
+Education:
+Bachelor of Computer Science, University of Technology

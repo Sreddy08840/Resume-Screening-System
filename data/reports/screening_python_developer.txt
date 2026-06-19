@@ -1,0 +1,46 @@
+================================================================================
+RESUME SCREENING REPORT
+================================================================================
+
+JOB REQUIREMENTS
+--------------------------------------------------------------------------------
+Job Title: Python Developer
+Location: Remote
+Description: We are looking for an experienced Python developer to join our team.
+Required Skills: Python, Django, SQL, PostgreSQL, Git
+Minimum Experience: 2 years
+
+CANDIDATE RECOMMENDATIONS
+--------------------------------------------------------------------------------
+
+CANDIDATE #1: HIGHLY RECOMMENDED
+================================================================================
+
+CANDIDATE INFORMATION
+----------------------------------------
+Name: John Doe
+Email: john.doe@example.com
+Education: Bachelor of Computer Science, University of Technology
+
+SKILLS
+----------------------------------------
+Matched Skills (5): Python, SQL, PostgreSQL, Django, Git
+Missing Skills: None
+
+EXPERIENCE
+----------------------------------------
+Candidate Experience: 8 years
+Required Experience: 2 years
+Experience Score: 100%
+
+FINAL SCORE AND RECOMMENDATION
+----------------------------------------
+Skill Score: 100%
+Experience Score: 100%
+Final Score: 100%
+Recommendation: Highly Recommended
+================================================================================
+
+================================================================================
+END OF REPORT
+================================================================================

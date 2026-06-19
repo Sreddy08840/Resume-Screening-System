@@ -1,0 +1,31 @@
+{
+    "job_title": "Python Developer",
+    "total_candidates": 1,
+    "recommendations": [
+        {
+            "candidate": {
+                "name": "John Doe",
+                "email": "john.doe@example.com",
+                "phone": "1 (555) 123-4567",
+                "skills": [
+                    "Aws",
+                    "Django",
+                    "Docker",
+                    "Flask",
+                    "Git",
+                    "Postgresql",
+                    "Python",
+                    "Sql"
+                ],
+                "experience": 8,
+                "education": "Bachelor of Computer Science, University of Technology"
+            },
+            "score_result": {
+                "skill_score": 100,
+                "experience_score": 100,
+                "final_score": 100
+            },
+            "recommendation": "Highly Recommended"
+        }
+    ]
+}
