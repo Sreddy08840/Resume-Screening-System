@@ -54,7 +54,7 @@ class Recommendation:
         """
         return {
             "candidate": self.candidate.to_dict(),
-            "score_result": self.score_result,
+            "score_result": self.score_result.to_dict(),
             "recommendation": self.recommendation,
         }
 

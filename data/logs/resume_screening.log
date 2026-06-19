@@ -406,3 +406,102 @@
 2026-06-19 22:35:15 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
 2026-06-19 22:35:15 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_dan5ao6e\resumes\empty2.txt
 2026-06-19 22:35:15 - resume_screening - WARNING - TXT file contains no text
+2026-06-19 22:41:56 - resume_screening - WARNING - PyPDF2 not installed, PDF parsing limited
+2026-06-19 22:41:56 - resume_screening - WARNING - pdfplumber not installed, PDF parsing limited
+2026-06-19 22:41:56 - resume_screening - WARNING - python-docx not installed, DOCX parsing not available
+2026-06-19 22:41:56 - resume_screening - INFO - Saved parsed candidate to: E:\porjects\Resume Screening System\data\parsed\parsed_Test_Candidate.json
+2026-06-19 22:41:56 - resume_screening - INFO - Loaded parsed candidate from: E:\porjects\Resume Screening System\data\parsed\parsed_Test_Candidate.json
+2026-06-19 22:41:56 - resume_screening - INFO - Saved analysis report to: E:\porjects\Resume Screening System\data\reports\test_report.json
+2026-06-19 22:41:56 - resume_screening - INFO - Loaded 3 reports
+2026-06-19 22:41:56 - resume_screening - INFO - Saved parsed candidate to: C:\Users\sredd\AppData\Local\Temp\resume_test_9ttcr_69\parsed\test_candidate.json
+2026-06-19 22:41:56 - resume_screening - INFO - Loaded parsed candidate from: C:\Users\sredd\AppData\Local\Temp\resume_test_9ttcr_69\parsed\test_candidate.json
+2026-06-19 22:41:56 - resume_screening - INFO - Successfully loaded job: Python Developer
+2026-06-19 22:41:56 - resume_screening - ERROR - Missing required fields in job file: ['required_skills', 'minimum_experience']
+2026-06-19 22:41:56 - resume_screening - ERROR - Invalid JSON in job file: Expecting value: line 1 column 1 (char 0)
+2026-06-19 22:41:56 - resume_screening - INFO - Saved analysis report to: C:\Users\sredd\AppData\Local\Temp\resume_test_9ttcr_69\reports\test_report.json
+2026-06-19 22:41:56 - resume_screening - INFO - Loaded 1 reports
+2026-06-19 22:41:57 - resume_screening - INFO - Parsing resume: test_resume.txt
+2026-06-19 22:41:57 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_9ttcr_69\resumes\test_resume.txt
+2026-06-19 22:41:57 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:41:57 - resume_screening - INFO - Successfully parsed: test_resume.txt
+2026-06-19 22:41:57 - resume_screening - INFO - Parsing all resumes in directory: C:\Users\sredd\AppData\Local\Temp\resume_test_9ttcr_69\resumes
+2026-06-19 22:41:57 - resume_screening - INFO - Parsing resume: resume0.txt
+2026-06-19 22:41:57 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_9ttcr_69\resumes\resume0.txt
+2026-06-19 22:41:57 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:41:57 - resume_screening - INFO - Successfully parsed: resume0.txt
+2026-06-19 22:41:57 - resume_screening - INFO - Parsing resume: resume1.txt
+2026-06-19 22:41:57 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_9ttcr_69\resumes\resume1.txt
+2026-06-19 22:41:57 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:41:57 - resume_screening - INFO - Successfully parsed: resume1.txt
+2026-06-19 22:41:57 - resume_screening - INFO - Parsing resume: resume2.txt
+2026-06-19 22:41:57 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_9ttcr_69\resumes\resume2.txt
+2026-06-19 22:41:57 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:41:57 - resume_screening - INFO - Successfully parsed: resume2.txt
+2026-06-19 22:41:57 - resume_screening - INFO - Parsed 3 files, 3 successful
+2026-06-19 22:41:57 - resume_screening - INFO - Parsing resume: empty.txt
+2026-06-19 22:41:57 - resume_screening - WARNING - Empty file: C:\Users\sredd\AppData\Local\Temp\resume_test_9ttcr_69\resumes\empty.txt
+2026-06-19 22:41:57 - resume_screening - INFO - Parsing resume: test.zip
+2026-06-19 22:41:57 - resume_screening - ERROR - Unsupported file type for test.zip: Unsupported file type: .zip
+2026-06-19 22:41:57 - resume_screening - ERROR - File not found: /path/does/not/exist.txt
+2026-06-19 22:41:57 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_9ttcr_69\resumes\test.txt
+2026-06-19 22:41:57 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:41:57 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_9ttcr_69\resumes\empty2.txt
+2026-06-19 22:41:57 - resume_screening - WARNING - TXT file contains no text
+2026-06-19 22:42:55 - resume_screening - WARNING - PyPDF2 not installed, PDF parsing limited
+2026-06-19 22:42:55 - resume_screening - WARNING - pdfplumber not installed, PDF parsing limited
+2026-06-19 22:42:55 - resume_screening - WARNING - python-docx not installed, DOCX parsing not available
+2026-06-19 22:42:55 - resume_screening - INFO - Saved parsed candidate to: E:\porjects\Resume Screening System\data\parsed\parsed_Test_Candidate.json
+2026-06-19 22:42:55 - resume_screening - INFO - Loaded parsed candidate from: E:\porjects\Resume Screening System\data\parsed\parsed_Test_Candidate.json
+2026-06-19 22:42:55 - resume_screening - INFO - Saved analysis report to: E:\porjects\Resume Screening System\data\reports\test_report.json
+2026-06-19 22:42:55 - resume_screening - INFO - Loaded 3 reports
+2026-06-19 22:42:55 - resume_screening - INFO - Saved parsed candidate to: C:\Users\sredd\AppData\Local\Temp\resume_test_1li08vvm\parsed\test_candidate.json
+2026-06-19 22:42:55 - resume_screening - INFO - Loaded parsed candidate from: C:\Users\sredd\AppData\Local\Temp\resume_test_1li08vvm\parsed\test_candidate.json
+2026-06-19 22:42:55 - resume_screening - INFO - Successfully loaded job: Python Developer
+2026-06-19 22:42:55 - resume_screening - ERROR - Missing required fields in job file: ['required_skills', 'minimum_experience']
+2026-06-19 22:42:55 - resume_screening - ERROR - Invalid JSON in job file: Expecting value: line 1 column 1 (char 0)
+2026-06-19 22:42:55 - resume_screening - INFO - Saved analysis report to: C:\Users\sredd\AppData\Local\Temp\resume_test_1li08vvm\reports\test_report.json
+2026-06-19 22:42:55 - resume_screening - INFO - Loaded 1 reports
+2026-06-19 22:42:55 - resume_screening - INFO - Parsing resume: test_resume.txt
+2026-06-19 22:42:55 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_1li08vvm\resumes\test_resume.txt
+2026-06-19 22:42:55 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:42:55 - resume_screening - INFO - Successfully parsed: test_resume.txt
+2026-06-19 22:42:55 - resume_screening - INFO - Parsing all resumes in directory: C:\Users\sredd\AppData\Local\Temp\resume_test_1li08vvm\resumes
+2026-06-19 22:42:55 - resume_screening - INFO - Parsing resume: resume0.txt
+2026-06-19 22:42:55 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_1li08vvm\resumes\resume0.txt
+2026-06-19 22:42:55 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:42:55 - resume_screening - INFO - Successfully parsed: resume0.txt
+2026-06-19 22:42:55 - resume_screening - INFO - Parsing resume: resume1.txt
+2026-06-19 22:42:55 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_1li08vvm\resumes\resume1.txt
+2026-06-19 22:42:55 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:42:55 - resume_screening - INFO - Successfully parsed: resume1.txt
+2026-06-19 22:42:55 - resume_screening - INFO - Parsing resume: resume2.txt
+2026-06-19 22:42:55 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_1li08vvm\resumes\resume2.txt
+2026-06-19 22:42:55 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:42:55 - resume_screening - INFO - Successfully parsed: resume2.txt
+2026-06-19 22:42:55 - resume_screening - INFO - Parsed 3 files, 3 successful
+2026-06-19 22:42:55 - resume_screening - INFO - Parsing resume: empty.txt
+2026-06-19 22:42:55 - resume_screening - WARNING - Empty file: C:\Users\sredd\AppData\Local\Temp\resume_test_1li08vvm\resumes\empty.txt
+2026-06-19 22:42:55 - resume_screening - INFO - Parsing resume: test.zip
+2026-06-19 22:42:55 - resume_screening - ERROR - Unsupported file type for test.zip: Unsupported file type: .zip
+2026-06-19 22:42:55 - resume_screening - ERROR - File not found: /path/does/not/exist.txt
+2026-06-19 22:42:55 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_1li08vvm\resumes\test.txt
+2026-06-19 22:42:55 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:42:55 - resume_screening - DEBUG - Parsing TXT file: C:\Users\sredd\AppData\Local\Temp\resume_test_1li08vvm\resumes\empty2.txt
+2026-06-19 22:42:55 - resume_screening - WARNING - TXT file contains no text
+2026-06-19 22:43:09 - resume_screening - WARNING - PyPDF2 not installed, PDF parsing limited
+2026-06-19 22:43:09 - resume_screening - WARNING - pdfplumber not installed, PDF parsing limited
+2026-06-19 22:43:09 - resume_screening - WARNING - python-docx not installed, DOCX parsing not available
+2026-06-19 22:43:09 - resume_screening - INFO - Successfully loaded job: Python Developer
+2026-06-19 22:43:09 - resume_screening - INFO - Successfully loaded job: Python Developer
+2026-06-19 22:43:09 - resume_screening - INFO - Parsing all resumes in directory: E:\porjects\Resume Screening System\data\resumes
+2026-06-19 22:43:09 - resume_screening - INFO - Parsing resume: empty.txt
+2026-06-19 22:43:09 - resume_screening - WARNING - Empty file: E:\porjects\Resume Screening System\data\resumes\empty.txt
+2026-06-19 22:43:09 - resume_screening - INFO - Parsing resume: sample_resume.txt
+2026-06-19 22:43:09 - resume_screening - DEBUG - Parsing TXT file: E:\porjects\Resume Screening System\data\resumes\sample_resume.txt
+2026-06-19 22:43:09 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:43:09 - resume_screening - INFO - Successfully parsed: sample_resume.txt
+2026-06-19 22:43:09 - resume_screening - INFO - Parsing resume: test.xyz
+2026-06-19 22:43:09 - resume_screening - ERROR - Unsupported file type for test.xyz: Unsupported file type: .xyz
+2026-06-19 22:43:09 - resume_screening - INFO - Parsed 3 files, 1 successful
+2026-06-19 22:43:09 - resume_screening - INFO - Saved parsed candidate to: E:\porjects\Resume Screening System\data\parsed\parsed_John_Doe.json
+2026-06-19 22:43:09 - resume_screening - DEBUG - Saved parsed candidate: John Doe

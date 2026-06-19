@@ -34,10 +34,10 @@
                 "skill_result": {
                     "matched_skills": [
                         "Python",
-                        "SQL",
                         "PostgreSQL",
                         "Django",
-                        "Git"
+                        "Git",
+                        "SQL"
                     ],
                     "missing_skills": [],
                     "skill_percentage": 100.0,
