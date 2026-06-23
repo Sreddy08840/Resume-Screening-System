@@ -33,11 +33,11 @@
             "score_result": {
                 "skill_result": {
                     "matched_skills": [
-                        "Django",
+                        "PostgreSQL",
+                        "SQL",
                         "Git",
                         "Python",
-                        "PostgreSQL",
-                        "SQL"
+                        "Django"
                     ],
                     "missing_skills": [],
                     "skill_percentage": 100.0,
