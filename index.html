@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Screening System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .upload-zone {
+            border: 3px dashed #667eea;
+            transition: all 0.3s ease;
+        }
+        .upload-zone:hover {
+            border-color: #764ba2;
+            background: rgba(102, 126, 234, 0.05);
+        }
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .progress-bar {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.4); }
+            50% { box-shadow: 0 0 30px rgba(102, 126, 234, 0.6); }
+        }
+        .glow {
+            animation: pulse-glow 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen py-8 px-4">
+        <div class="max-w-7xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-10">
+                <div class="glass-card rounded-3xl p-8 shadow-2xl">
+                    <div class="flex items-center justify-center gap-4 mb-4">
+                        <i class="fas fa-file-alt text-5xl text-purple-600"></i>
+                        <h1 class="text-5xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                            Resume Screening System
+                        </h1>
+                    </div>
+                    <p class="text-gray-600 text-lg">Professional resume parsing and candidate recommendation</p>
+                    <div class="mt-4">
+                        <a href="http://localhost:8000/docs" target="_blank" class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-2 rounded-xl">
+                            View API Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="glass-card rounded-2xl p-4 mb-8">
+                <div class="flex gap-4 justify-center">
+                    <button id="uploadTab" onclick="switchTab('upload')" class="px-6 py-3 rounded-xl font-semibold transition-all bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg">
+                        <i class="fas fa-upload mr-2"></i>Upload & Screen
+                    </button>
+                    <button id="createTab" onclick="switchTab('create')" class="px-6 py-3 rounded-xl font-semibold transition-all text-gray-600 hover:text-purple-600">
+                        <i class="fas fa-plus-circle mr-2"></i>Create Job
+                    </button>
+                </div>
+            </div>
+
+            <!-- Upload & Screen Tab -->
+            <div id="uploadContent">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Upload Section -->
+                    <div class="glass-card rounded-2xl p-8 shadow-xl">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+                            <i class="fas fa-cloud-upload-alt text-purple-600"></i>
+                            Upload Resumes
+                        </h2>
+                        
+                        <div class="upload-zone rounded-xl p-10 text-center cursor-pointer mb-6" onclick="document.getElementById('fileInput').click()">
+                            <i class="fas fa-file-upload text-6xl text-purple-400 mb-4"></i>
+                            <p class="text-gray-700 font-semibold mb-2">Click to browse files</p>
+                            <p class="text-gray-500 text-sm">PDF, DOCX, TXT files supported</p>
+                            <input id="fileInput" type="file" multiple accept=".pdf,.docx,.txt" onchange="uploadFiles()" class="hidden" />
+                        </div>
+
+                        <div id="uploadedFiles" class="mb-6"></div>
+
+                        <!-- Job Selection -->
+                        <div class="mb-6">
+                            <h3 class="font-semibold text-gray-800 mb-4">Select Job Requirement</h3>
+                            <select id="jobSelect" class="w-full p-3 border-2 border-purple-200 rounded-xl focus:border-purple-500 outline-none">
+                                <option value="">-- Choose a job --</option>
+                            </select>
+                        </div>
+
+                        <button onclick="screenResumes()" id="screenBtn" class="w-full py-4 rounded-xl font-bold text-white transition-all bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-xl glow">
+                            <i class="fas fa-magic mr-2"></i>Start Screening
+                        </button>
+
+                        <button onclick="loadJobs()" class="w-full mt-4 py-3 rounded-xl font-semibold text-purple-600 border-2 border-purple-600">
+                            <i class="fas fa-refresh mr-2"></i>Refresh Jobs
+                        </button>
+                    </div>
+
+                    <!-- Results Section -->
+                    <div class="glass-card rounded-2xl p-8 shadow-xl">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+                            <i class="fas fa-trophy text-yellow-500"></i>
+                            Screening Results
+                        </h2>
+                        
+                        <div id="resultsArea">
+                            <div class="text-center py-16 text-gray-400">
+                                <i class="fas fa-inbox text-6xl mb-4"></i>
+                                <p class="text-lg">No results yet. Upload resumes and start screening!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Create Job Tab -->
+            <div id="createContent" style="display: none;">
+                <div class="glass-card rounded-2xl p-8 shadow-xl max-w-3xl mx-auto">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+                        <i class="fas fa-briefcase text-purple-600"></i>
+                        Create Job Requirement
+                    </h2>
+
+                    <form id="jobForm" onsubmit="createJob(event)" class="space-y-6">
+                        <div>
+                            <label class="block font-semibold text-gray-700 mb-2">Job Title</label>
+                            <input type="text" id="jobTitle" required class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-500 outline-none" placeholder="e.g., Python Developer" />
+                        </div>
+
+                        <div>
+                            <label class="block font-semibold text-gray-700 mb-2">Location</label>
+                            <input type="text" id="jobLocation" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-500 outline-none" placeholder="e.g., Remote, New York" />
+                        </div>
+
+                        <div>
+                            <label class="block font-semibold text-gray-700 mb-2">Description</label>
+                            <textarea id="jobDescription" rows="4" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-500 outline-none" placeholder="Job description..."></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block font-semibold text-gray-700 mb-2">Required Skills (one per line)</label>
+                            <textarea id="jobSkills" rows="4" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-500 outline-none" placeholder="Python&#10;Django&#10;Git"></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block font-semibold text-gray-700 mb-2">Minimum Experience (years)</label>
+                            <input type="number" min="0" id="jobExperience" value="2" class="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-purple-500 outline-none" />
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl font-bold shadow-lg hover:shadow-xl transition-all">
+                            <i class="fas fa-save mr-2"></i>Create Job Requirement
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:8000/api';
+        let selectedFiles = [];
+
+        window.onload = function() {
+            loadJobs();
+        }
+
+        function switchTab(tab) {
+            if (tab === 'upload') {
+                document.getElementById('uploadContent').style.display = 'block';
+                document.getElementById('createContent').style.display = 'none';
+                document.getElementById('uploadTab').className = 'px-6 py-3 rounded-xl font-semibold transition-all bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg';
+                document.getElementById('createTab').className = 'px-6 py-3 rounded-xl font-semibold transition-all text-gray-600 hover:text-purple-600';
+            } else {
+                document.getElementById('uploadContent').style.display = 'none';
+                document.getElementById('createContent').style.display = 'block';
+                document.getElementById('createTab').className = 'px-6 py-3 rounded-xl font-semibold transition-all bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg';
+                document.getElementById('uploadTab').className = 'px-6 py-3 rounded-xl font-semibold transition-all text-gray-600 hover:text-purple-600';
+            }
+        }
+
+        async function loadJobs() {
+            try {
+                const response = await fetch(`${API_URL}/jobs`);
+                const data = await response.json();
+                const jobSelect = document.getElementById('jobSelect');
+                jobSelect.innerHTML = '<option value="">-- Choose a job --</option>';
+                
+                if (data.status === 'success') {
+                    data.jobs.forEach(job => {
+                        const option = document.createElement('option');
+                        option.value = job.name;
+                        option.textContent = job.title;
+                        jobSelect.appendChild(option);
+                    });
+                }
+            } catch (error) {
+                console.error('Error loading jobs:', error);
+                alert('Error loading jobs. Make sure backend is running!');
+            }
+        }
+
+        function uploadFiles() {
+            const files = document.getElementById('fileInput').files;
+            selectedFiles = Array.from(files);
+            
+            if (selectedFiles.length > 0) {
+                let html = '<h3 class="font-semibold text-gray-800 mb-3"><i class="fas fa-check-circle text-green-500 mr-2"></i>Uploaded Files (' + selectedFiles.length + ')</h3><div class="space-y-2">';
+                selectedFiles.forEach(file => {
+                    html += '<div class="flex items-center gap-3 bg-gray-50 p-3 rounded-lg"><i class="fas fa-file text-purple-500"></i><span class="flex-1 text-gray-700">' + file.name + '</span></div>';
+                });
+                html += '</div>';
+                document.getElementById('uploadedFiles').innerHTML = html;
+            }
+        }
+
+        async function screenResumes() {
+            const jobName = document.getElementById('jobSelect').value;
+            if (!jobName) {
+                alert('Please select a job first!');
+                return;
+            }
+
+            // Upload files first
+            if (selectedFiles.length > 0) {
+                const formData = new FormData();
+                selectedFiles.forEach(file => formData.append('files', file));
+                
+                try {
+                    await fetch(`${API_URL}/upload-resumes`, {
+                        method: 'POST',
+                        body: formData
+                    });
+                } catch (error) {
+                    console.error('Error uploading files:', error);
+                }
+            }
+
+            // Now screen
+            try {
+                const response = await fetch(`${API_URL}/screen/${jobName}`);
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    displayResults(data);
+                }
+            } catch (error) {
+                console.error('Error screening:', error);
+                alert('Error screening. Make sure backend is running!');
+            }
+        }
+
+        function getRecColor(rec) {
+            switch(rec) {
+                case 'Highly Recommended': return 'bg-green-500';
+                case 'Recommended': return 'bg-blue-500';
+                case 'Consider': return 'bg-yellow-500';
+                default: return 'bg-red-500';
+            }
+        }
+
+        function displayResults(data) {
+            let html = '';
+            if (data.recommendations.length === 0) {
+                html = '<div class="text-center py-16 text-gray-400"><i class="fas fa-inbox text-6xl mb-4"></i><p class="text-lg">No candidates found!</p></div>';
+            } else {
+                data.recommendations.forEach((rec, i) => {
+                    const score = rec.score_result;
+                    const cand = rec.candidate;
+                    html += '<div class="bg-gradient-to-br from-white to-gray-50 p-6 rounded-xl border-l-4 border-purple-500 mb-4">';
+                    html += '<div class="flex items-start justify-between mb-4"><div>';
+                    html += '<h3 class="text-xl font-bold text-gray-800">' + (cand.name || 'Unknown Candidate') + '</h3>';
+                    if (cand.email) html += '<p class="text-gray-600"><i class="fas fa-envelope mr-2"></i>' + cand.email + '</p>';
+                    html += '</div><span class="' + getRecColor(rec.recommendation) + ' text-white px-4 py-2 rounded-full text-sm font-bold">' + rec.recommendation + '</span></div>';
+                    
+                    html += '<div class="mb-4"><div class="flex justify-between text-sm font-semibold mb-2"><span>Final Score</span><span class="text-purple-600">' + score.final_score + '%</span></div><div class="bg-gray-200 rounded-full h-3"><div class="progress-bar h-3 rounded-full" style="width: ' + score.final_score + '%"></div></div></div>';
+
+                    html += '<div class="grid grid-cols-2 gap-4 mb-4"><div class="text-center p-4 bg-green-50 rounded-lg"><i class="fas fa-check-circle text-green-500 text-2xl mb-2"></i><div class="text-2xl font-bold text-green-700">' + score.skill_result.skill_score + '%</div><div class="text-sm text-gray-600">Skills</div></div>';
+                    html += '<div class="text-center p-4 bg-blue-50 rounded-lg"><i class="fas fa-briefcase text-blue-500 text-2xl mb-2"></i><div class="text-2xl font-bold text-blue-700">' + score.experience_score + '%</div><div class="text-sm text-gray-600">Experience</div></div></div>';
+
+                    if (cand.skills && cand.skills.length > 0) {
+                        html += '<div><h4 class="font-semibold text-gray-700 mb-2">Skills</h4><div class="flex flex-wrap gap-2">';
+                        cand.skills.forEach(skill => {
+                            html += '<span class="skill-tag text-white px-3 py-1 rounded-full text-sm">' + skill + '</span>';
+                        });
+                        html += '</div></div>';
+                    }
+                    html += '</div>';
+                });
+            }
+            document.getElementById('resultsArea').innerHTML = html;
+        }
+
+        async function createJob(e) {
+            e.preventDefault();
+            
+            const skills = document.getElementById('jobSkills').value.split('\n').map(s => s.trim()).filter(s => s);
+            
+            const jobData = {
+                title: document.getElementById('jobTitle').value,
+                location: document.getElementById('jobLocation').value,
+                description: document.getElementById('jobDescription').value,
+                required_skills: skills,
+                minimum_experience: parseInt(document.getElementById('jobExperience').value) || 0
+            };
+            
+            try {
+                const response = await fetch(`${API_URL}/job`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(jobData)
+                });
+                
+                if (response.ok) {
+                    alert('Job created successfully!');
+                    document.getElementById('jobForm').reset();
+                    loadJobs();
+                    switchTab('upload');
+                }
+            } catch (error) {
+                console.error('Error creating job:', error);
+                alert('Error creating job!');
+            }
+        }
+    </script>
+</body>
+</html>

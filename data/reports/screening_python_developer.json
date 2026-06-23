@@ -33,10 +33,10 @@
             "score_result": {
                 "skill_result": {
                     "matched_skills": [
-                        "Python",
-                        "PostgreSQL",
                         "Django",
                         "Git",
+                        "Python",
+                        "PostgreSQL",
                         "SQL"
                     ],
                     "missing_skills": [],

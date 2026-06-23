@@ -505,3 +505,33 @@
 2026-06-19 22:43:09 - resume_screening - INFO - Parsed 3 files, 1 successful
 2026-06-19 22:43:09 - resume_screening - INFO - Saved parsed candidate to: E:\porjects\Resume Screening System\data\parsed\parsed_John_Doe.json
 2026-06-19 22:43:09 - resume_screening - DEBUG - Saved parsed candidate: John Doe
+2026-06-19 22:45:02 - resume_screening - WARNING - PyPDF2 not installed, PDF parsing limited
+2026-06-19 22:45:02 - resume_screening - WARNING - pdfplumber not installed, PDF parsing limited
+2026-06-19 22:45:02 - resume_screening - WARNING - python-docx not installed, DOCX parsing not available
+2026-06-19 22:45:02 - resume_screening - INFO - Successfully loaded job: Python Developer
+2026-06-19 22:45:02 - resume_screening - INFO - Successfully loaded job: Python Developer
+2026-06-19 22:45:02 - resume_screening - INFO - Parsing all resumes in directory: E:\porjects\Resume Screening System\data\resumes
+2026-06-19 22:45:02 - resume_screening - INFO - Parsing resume: empty.txt
+2026-06-19 22:45:02 - resume_screening - WARNING - Empty file: E:\porjects\Resume Screening System\data\resumes\empty.txt
+2026-06-19 22:45:02 - resume_screening - INFO - Parsing resume: sample_resume.txt
+2026-06-19 22:45:02 - resume_screening - DEBUG - Parsing TXT file: E:\porjects\Resume Screening System\data\resumes\sample_resume.txt
+2026-06-19 22:45:02 - resume_screening - DEBUG - Successfully parsed TXT with utf-8 encoding
+2026-06-19 22:45:02 - resume_screening - INFO - Successfully parsed: sample_resume.txt
+2026-06-19 22:45:02 - resume_screening - INFO - Parsing resume: test.xyz
+2026-06-19 22:45:02 - resume_screening - ERROR - Unsupported file type for test.xyz: Unsupported file type: .xyz
+2026-06-19 22:45:02 - resume_screening - INFO - Parsed 3 files, 1 successful
+2026-06-19 22:45:02 - resume_screening - INFO - Saved parsed candidate to: E:\porjects\Resume Screening System\data\parsed\parsed_John_Doe.json
+2026-06-19 22:45:02 - resume_screening - DEBUG - Saved parsed candidate: John Doe
+2026-06-23 11:10:35 - resume_screening - WARNING - PyPDF2 not installed, PDF parsing limited
+2026-06-23 11:10:35 - resume_screening - WARNING - pdfplumber not installed, PDF parsing limited
+2026-06-23 11:10:35 - resume_screening - WARNING - python-docx not installed, DOCX parsing not available
+2026-06-23 11:10:37 - resume_screening - WARNING - PyPDF2 not installed, PDF parsing limited
+2026-06-23 11:10:37 - resume_screening - WARNING - pdfplumber not installed, PDF parsing limited
+2026-06-23 11:10:37 - resume_screening - WARNING - python-docx not installed, DOCX parsing not available
+2026-06-23 11:11:16 - resume_screening - WARNING - PyPDF2 not installed, PDF parsing limited
+2026-06-23 11:11:16 - resume_screening - WARNING - pdfplumber not installed, PDF parsing limited
+2026-06-23 11:11:16 - resume_screening - WARNING - python-docx not installed, DOCX parsing not available
+2026-06-23 11:11:51 - resume_screening - WARNING - PyPDF2 not installed, PDF parsing limited
+2026-06-23 11:11:51 - resume_screening - WARNING - pdfplumber not installed, PDF parsing limited
+2026-06-23 11:11:51 - resume_screening - WARNING - python-docx not installed, DOCX parsing not available
+2026-06-23 11:14:58 - resume_screening - INFO - Successfully loaded job: Python Developer

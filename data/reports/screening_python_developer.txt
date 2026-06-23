@@ -24,7 +24,7 @@ Education: Bachelor of Computer Science, University of Technology
 
 SKILLS
 ----------------------------------------
-Matched Skills (5): Python, PostgreSQL, Django, Git, SQL
+Matched Skills (5): Django, Git, Python, PostgreSQL, SQL
 Missing Skills: None
 
 EXPERIENCE

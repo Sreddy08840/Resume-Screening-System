@@ -1,7 +1,7 @@
 
 # Resume Screening System
 
-A professional, modular Python application to automate the resume screening process.
+A professional, full-stack application to automate the resume screening process. Features a beautiful React + Tailwind CSS frontend and FastAPI backend!
 
 
 ## Table of Contents
@@ -20,6 +20,8 @@ A professional, modular Python application to automate the resume screening proc
 
 ## Project Overview
 The Resume Screening System is a powerful, extensible tool that parses, analyzes, and ranks candidate resumes against job requirements using modular architecture for efficient hiring processes.
+
+**✨ Now with beautiful modern web UI! ✨**
 
 
 ## Features
@@ -102,19 +104,43 @@ resume-screening-system/
 
 ## Usage
 
-### 1. Prepare Job Requirements
-Create a job requirements JSON file in `data/jobs/` (see the format below)
+### 🖥️ Web Application (Recommended)
+Run the beautiful web interface with React + FastAPI!
 
-### 2. Add Resumes
-Place all resumes in `data/resumes/`
+1. **Start the backend server**
+   ```bash
+   py -m uvicorn api:app --reload
+   ```
+   Backend will be at: http://localhost:8000
+   API Documentation: http://localhost:8000/docs
 
-### 3. Run the Application
+2. **Open the frontend**
+   Simply open `index.html` in your browser!
+
+
+### 📟 Command Line Interface
+Use the traditional command line interface as well:
+
+1. **Prepare Job Requirements**
+   Create a job requirements JSON file in `data/jobs/` (see the format below)
+
+2. **Add Resumes**
+   Place all resumes in `data/resumes/`
+
+3. **Run the Application**
+   ```bash
+   py app.py
+   ```
+
+4. **Review Results**
+   Check reports are in `data/reports/` and logs are in `data/logs/`
+
+
+### 🚀 Quick Start Script!
+For convenience, you can use the provided script:
 ```bash
-py app.py
+py run_app.py
 ```
-
-### 4. Review Results
-Check reports are in `data/reports/` and logs are in `data/logs/`
 
 
 ## Example Input
@@ -279,11 +305,23 @@ Log file: E:\porjects\Resume Screening System\data\logs\resume_screening.log
 
 
 ## Technologies Used
+### Backend
 - **Python 3.x**: 3.8+
+- **FastAPI**: Modern web framework
+- **Uvicorn**: ASGI server
 - **PDF Parsing**: PyPDF2, pdfplumber
 - **DOCX Parsing**: python-docx
 - **Testing**: pytest, pytest-cov
+
+### Frontend
+- **React 18**: Modern UI library
+- **Tailwind CSS**: Beautiful styling
+- **Font Awesome**: Icons
+- **CDN Delivery**: No build process needed
+
+### General
 - **PEP8 Compliance**: Code follows Python's style guide
+- **Modular Architecture**: Clean, maintainable code
 
 
 ## Future Improvements
