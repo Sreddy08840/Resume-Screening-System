@@ -24,7 +24,7 @@ Education: Bachelor of Computer Science, University of Technology
 
 SKILLS
 ----------------------------------------
-Matched Skills (5): PostgreSQL, SQL, Git, Python, Django
+Matched Skills (5): PostgreSQL, SQL, Django, Python, Git
 Missing Skills: None
 
 EXPERIENCE
@@ -39,6 +39,93 @@ Skill Score: 100%
 Experience Score: 100%
 Final Score: 100%
 Recommendation: Highly Recommended
+================================================================================
+
+CANDIDATE #2: RECOMMENDED
+================================================================================
+
+CANDIDATE INFORMATION
+----------------------------------------
+Name: Professional Summary
+Email: sreddy08840@gmail.com
+Phone: 8618808929
+Education: Bachelor of Engineering — Computer Science  ·  Bangalore Technological Institute  |  Bengaluru	Dec 2022 – May 2026 CGPA: 7.95 / 10 Programming — Associate Certification  ·  NPTEL  |  	Jul 2024 – Oct 2024 CERTIFICATIONS Data Structures and Algorithms in Java — NPTEL Programming in Java — NPTEL (IIT Kanpur) JavaScript Algorithms and Data Structures — freeCodeCamp Front End Development Libraries — freeCodeCamp AI Tools Workshop — The Fledgling KEY ACHIEVEMENTS 75% API performance improvement: Reduced response time from 800ms to 200ms through SQL query optimization and database indexing on Agri-Connect platform. Production deployment with 100+ users: Successfully shipped full-stack application handling real beta testers with 4.2-star feedback score. 30% query optimization at KodNest: Improved database performance across APIs serving 1,000+ requests through targeted indexing and restructuring. Hackathon finalist: Recognized across multiple national-level hackathons for AI-powered solutions in healthcare and agriculture domains. Dual internships (active): Simultaneously contributing as AI Engineer (FlyRank AI) and GenAI Developer Intern (HiDevs), gaining rapid real-world exposure. LANGUAGES English (Full Professional)  |  Hindi (Professional Working)  |  Kannada (Native)
+
+SKILLS
+----------------------------------------
+Matched Skills (5): PostgreSQL, SQL, Django, Python, Git
+Missing Skills: None
+
+EXPERIENCE
+----------------------------------------
+Candidate Experience: 0 years
+Required Experience: 2 years
+Experience Score: 0%
+
+FINAL SCORE AND RECOMMENDATION
+----------------------------------------
+Skill Score: 100%
+Experience Score: 0%
+Final Score: 70%
+Recommendation: Recommended
+================================================================================
+
+CANDIDATE #3: CONSIDER
+================================================================================
+
+CANDIDATE INFORMATION
+----------------------------------------
+Name: Professional Summary
+Email: sreddy08840@gmail.com
+Phone: 8618808929
+Education: Bangalore Technological Institute Dec 2022 – May 2026 Bachelor of Engineering (B.E.), Computer Science | Bengaluru, India NPTEL Jul 2024 – Oct 2024 Associate Certification, Data Structures & Algorithms St. Paul's PU College, Bidar Jul 2020 – Oct 2022 Pre-University Course (PCMB) — Science Stream CERTIFICATIONS • Data Structures & Algorithms — NPTEL • Front-End Development Libraries — freeCodeCamp ACHIEVEMENTS • Finalist, HackBLR Hackathon — recognized for building a working full-stack solution under time-constrained, competitive conditions. LANGUAGES English (Full Professional) • Hindi (Professional Working) • Kannada (Native/Bilingual) • Telugu (Elementary)
+
+SKILLS
+----------------------------------------
+Matched Skills (4): PostgreSQL, SQL, Python, Git
+Missing Skills (1): Django
+
+EXPERIENCE
+----------------------------------------
+Candidate Experience: 0 years
+Required Experience: 2 years
+Experience Score: 0%
+
+FINAL SCORE AND RECOMMENDATION
+----------------------------------------
+Skill Score: 80%
+Experience Score: 0%
+Final Score: 56%
+Recommendation: Consider
+================================================================================
+
+CANDIDATE #4: REJECT
+================================================================================
+
+CANDIDATE INFORMATION
+----------------------------------------
+Name: Professional Summary
+Email: sreddy08840@gmail.com
+Phone: 8618808929
+Education: Bachelor of Engineering — Computer Science | Bangalore Technological Institute Dec 2022 – Jun 2026 CGPA: 7.95 / 10 CERTIFICATIONS ▪ Data Structures and Algorithms in Java — NPTEL ▪ Programming in Java — NPTEL (IIT Kanpur) ▪ Front End Development Libraries — freeCodeCamp ACHIEVEMENTS & RECOGNITION ▪ Finalist in multiple national-level hackathons, competing against 500+ teams with AI-powered solutions in healthcare and agriculture domains. ▪ Independently designed and deployed end-to-end AI applications in production-level environments, covering NLP, speech recognition, and Generative AI. ▪ Recognized for rapid prototyping capability, delivering functional AI prototypes within 48-hour hackathon sprints. ▪ Successfully built 4+ full-stack and AI projects integrating modern technologies including React.js, Node.js, Python, and OpenAI APIs. LANGUAGES English (Fluent) | Hindi (Fluent) | Kannada (Native)
+
+SKILLS
+----------------------------------------
+Matched Skills (3): SQL, Python, Git
+Missing Skills (2): PostgreSQL, Django
+
+EXPERIENCE
+----------------------------------------
+Candidate Experience: 0 years
+Required Experience: 2 years
+Experience Score: 0%
+
+FINAL SCORE AND RECOMMENDATION
+----------------------------------------
+Skill Score: 60%
+Experience Score: 0%
+Final Score: 42%
+Recommendation: Reject
 ================================================================================
 
 ================================================================================
